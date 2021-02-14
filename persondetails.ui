@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PersonDetails</class>
+ <widget class="QDialog" name="PersonDetails">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>485</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Kişi Detayları</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Kişi Bilgileri</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="labelPersonDetails">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QPushButton" name="pushButtonUpdate">
+     <property name="text">
+      <string>Güncelle</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QToolBox" name="toolBoxPolicies">
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <widget class="QWidget" name="page_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>982</width>
+        <height>305</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Araçlar</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QTableWidget" name="tableWidgetVehicles">
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContents</enum>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="columnCount">
+          <number>8</number>
+         </property>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Marka</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Plaka</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tipi</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Araç Kodu</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Kullanım Tarzı</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Kullanım Sınıfı</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Ruhsat Seri No</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Engelli Aracı mı?</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="pushButtonAddVehicle">
+           <property name="text">
+            <string>Ekle</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonEditVehicle">
+           <property name="text">
+            <string>Düzenle</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonDeleteVehicle">
+           <property name="text">
+            <string>Sil</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>982</width>
+        <height>305</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Trafik Poliçeleri ve Kaskolar</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QTableWidget" name="tableWidgetTrafficPolicies">
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContents</enum>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="columnCount">
+          <number>6</number>
+         </property>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>130</number>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Araç Plakası</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Başlangıç Tarihi</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Bitiş Tarihi</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Sigorta Şirketi</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Kasko mu?</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Aktif mi?</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="pushButtonAddTrafficPolicy">
+           <property name="text">
+            <string>Ekle</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonEditTrafficPolicy">
+           <property name="text">
+            <string>Düzenle</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonDeleteTrafficPolicy">
+           <property name="text">
+            <string>Sil</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>982</width>
+        <height>305</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Sağlık Poliçeleri</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QTableWidget" name="tableWidgetHealthPolicies">
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>110</number>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Diğer Sigortalı Tc</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Diğer Sigortalı 2 Tc</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Diğer Sigortalı 3 Tc</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Hastalık Beyanı</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Sigorta Şirketi</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Teminatlar</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Başlangıç Tarihi</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Bitiş Tarihi</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Aktif mi?</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="pushButtonAddHealthPolicies">
+           <property name="text">
+            <string>Ekle</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonEditHealthPolicy">
+           <property name="text">
+            <string>Düzenle</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonDeleteHealthPolicy">
+           <property name="text">
+            <string>Sil</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

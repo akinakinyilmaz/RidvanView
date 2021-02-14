@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddUpdateHealthPolicyDialog</class>
+ <widget class="QDialog" name="AddUpdateHealthPolicyDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sağlık Poliçesi Ekle ve Düzenle</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>Başlangıç Tarihi:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="lineEditDigerSigortaliTc"/>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>Hastalık Beyanı:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Diğer Sigortalı Tc 3:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="lineEditDigerSigortali2Tc"/>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLineEdit" name="lineEditDigerSigortali3Tc"/>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLineEdit" name="lineEditHastalikBeyani"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Diğer Sigortalı Tc 2:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="1">
+    <widget class="QPushButton" name="pushButtonSave">
+     <property name="text">
+      <string>Kaydet</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Diğer Sigortali Tc:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QLineEdit" name="lineEditSigortaSirketi"/>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>Sigorta Şirketi:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Teminatlar:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QLineEdit" name="lineEditTeminatlar"/>
+   </item>
+   <item row="7" column="1">
+    <widget class="QDateEdit" name="dateEditBitisTarihi"/>
+   </item>
+   <item row="6" column="1">
+    <widget class="QDateEdit" name="dateEditBaslangicTarihi"/>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>Bitiş Tarihi:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1">
+    <widget class="QCheckBox" name="checkBoxIsActive">
+     <property name="text">
+      <string>Aktif mi?</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>lineEditDigerSigortaliTc</tabstop>
+  <tabstop>lineEditDigerSigortali2Tc</tabstop>
+  <tabstop>lineEditDigerSigortali3Tc</tabstop>
+  <tabstop>lineEditHastalikBeyani</tabstop>
+  <tabstop>lineEditSigortaSirketi</tabstop>
+  <tabstop>lineEditTeminatlar</tabstop>
+  <tabstop>dateEditBaslangicTarihi</tabstop>
+  <tabstop>dateEditBitisTarihi</tabstop>
+  <tabstop>pushButtonSave</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

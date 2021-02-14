@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddUpdateVehicleDialog</class>
+ <widget class="QDialog" name="AddUpdateVehicleDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>289</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Araç Ekle Ve Düzenle</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Plaka:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>Ruhsat Seri No:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Marka:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Tipi:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>Engelli Aracı mı?:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Kullanım Tarzı:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Kullanım Sınıfı:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Araç Kodu:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEditMarka"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEditPlaka"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="lineEditTipi"/>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="lineEditAracKodu"/>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="lineEditKullanimTarzi"/>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="lineEditKullanimSinifi"/>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="lineEditRuhsatSeriNo"/>
+     </item>
+     <item row="7" column="1">
+      <widget class="QComboBox" name="comboBoxEngelliAracimi">
+       <item>
+        <property name="text">
+         <string>Hayır</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Evet</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButtonSave">
+       <property name="text">
+        <string>Kaydet</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
